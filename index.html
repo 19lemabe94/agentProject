@@ -7,7 +7,10 @@
     <title>BB Controle Semanal</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/New folder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/New folder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/New folder/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
         :root {
             /* TEMA DARK */
@@ -56,9 +59,14 @@
         }
 
         /* --- SIDEBAR --- */
+        .sidebar img {
+            margin : auto;
+
+        } 
+        
         .sidebar { 
             width: 260px; background-color: var(--bg-sidebar); border-right: 1px solid var(--border); 
-            display: flex; flex-direction: column; padding: 30px 20px; flex-shrink: 0; z-index: 10;
+            display: flex; flex-direction: column; padding: 30px 20px; flex-shrink: 0; z-index: 10; margin:auto;
         }
         .brand { margin-bottom: 40px; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
         .brand h1 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin: 0; color: var(--accent); letter-spacing: 1px; }
@@ -197,11 +205,11 @@
     <input type="file" id="fileInput" style="display: none;" onchange="importData(this)">
 
     <aside class="sidebar">
+        <img src="/src/logobbblack.jpg" alt="Logo BB" style="width:70px;height:70px;"> 
         <div class="brand">
             <h1>BB COMANDO</h1>
             <span>Agente de Tecnologia</span>
         </div>
-        
         <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
 
         <div class="nav-container" id="navMenu">
