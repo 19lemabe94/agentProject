@@ -1,52 +1,56 @@
-# 🚀 BB Comando - Sistema de Controle de Estudos (Agente TI)
+# 🦁 BB Comando - Sistema de Alta Performance (Agente de TI)
 
-![Status do Projeto](https://img.shields.io/badge/Status-Finalizado-success)
-![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-blue)
+![Status](https://img.shields.io/badge/Status-V20_Stable-success)
+![Tech](https://img.shields.io/badge/Stack-VanillaJS_%7C_Chart.js_%7C_CSS3-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 📋 Sobre o Projeto
+## 🎯 Sobre o Projeto
 
-O **BB Comando** é uma Single Page Application (SPA) desenvolvida para gerenciar, metrificar e otimizar a rotina de estudos para o concurso de Agente de Tecnologia do Banco do Brasil. 
+O **BB Comando** é uma *Single Page Application* (SPA) de alta fidelidade desenvolvida para gerenciar, metrificar e otimizar a preparação para o concurso de **Agente de Tecnologia do Banco do Brasil**.
 
-Diferente de planilhas comuns, este sistema roda inteiramente no navegador, utiliza **LocalStorage** para persistência de dados e oferece um **Dashboard Analítico** em tempo real.
+Diferente de planilhas estáticas, este sistema opera como um **Dashboard Tático**, rodando inteiramente no navegador (Client-Side) com persistência de dados via `LocalStorage` e sincronização offline via arquivos JSON.
 
-## ✨ Funcionalidades (V9 OmniSync)
+---
 
-* **📅 Cronograma Dinâmico:** Interface estilo Excel para input de carga horária, páginas lidas e questões.
-* **📊 Dashboard de BI:** Gráficos interativos (Chart.js) para acompanhar:
-    * Evolução semanal de acertos.
-    * Precisão global.
-    * Volume diário de estudos.
-* **🔄 OmniSync (Backup Offline):** Sistema de Exportação/Importação de JSON para sincronizar dados entre PC e Celular sem necessidade de servidor.
-* **🎨 UI Responsiva & Temas:**
-    * Design "Mobile-First" adaptável.
-    * Alternância nativa entre **Dark Mode** e **Light Mode**.
-* **🛡️ Segurança de Dados:** Modal de confirmação para exclusão de semanas e validação de inputs.
-* **⚡ Performance:** Zero dependências de backend. Carregamento instantâneo.
+## 🚀 Funcionalidades Principais (V20)
 
-## 🛠️ Tecnologias Utilizadas
+### 🧠 1. Smart Review (Algoritmo de Revisão)
+O sistema analisa os tópicos estudados de Segunda a Sábado e, com um clique, **gera automaticamente** um cronograma de revisão ativa para o Domingo, calculando slots de tempo baseados na carga horária da semana.
 
-* **HTML5 Semantic:** Estrutura otimizada e acessível.
-* **CSS3 Moderno:** Uso de CSS Variables (`:root`), Flexbox e CSS Grid para layout responsivo.
-* **Vanilla JavaScript (ES6+):** Lógica de estado, manipulação de DOM e eventos.
-* **LocalStorage API:** Persistência de dados do usuário no navegador.
-* **Chart.js:** Biblioteca para renderização dos gráficos de desempenho.
-* **File API / Blob:** Para geração e leitura dos arquivos de backup `.json`.
+### 📊 2. Deep Analytics & BI
+Dashboard integrado com **Chart.js** que oferece visão em tempo real:
+* **Eficiência por Tópico:** Tabela dinâmica que classifica seus melhores e piores tópicos baseada na taxa de acerto.
+* **Distribuição de Carga:** Gráficos comparativos de Horas Planejadas vs. Executadas por disciplina.
+* **KPIs Globais:** Contadores de Questões, Horas Líquidas e Progresso do Edital.
+
+### 🔄 3. Edital Sync (Bidirecional)
+Integração total entre o Cronograma e a aba de Edital.
+* Ao lançar horas no cronograma, o sistema **atualiza automaticamente** o badge de horas acumuladas na árvore do Edital.
+* Checkboxes customizados para controle visual de tópicos vencidos.
+
+### 🎨 4. UI/UX Avançada (Mobile First)
+* **Design System:** Tipografia elegante (*Inter* + *Playfair Display*), paleta de cores institucional (Dark/Light Mode) e componentes visuais refinados.
+* **Custom Modals:** Substituição de todos os `alert()` e `confirm()` nativos por um sistema de modais responsivos, com scroll interno e prevenção de erros de layout.
+* **Inputs Inteligentes:** Selects dinâmicos que carregam tópicos baseados na disciplina escolhida.
+
+### 💾 5. OmniSync (Backup Offline)
+Sistema robusto de Importação/Exportação de dados em JSON, permitindo transição fluida entre Desktop e Mobile sem necessidade de servidor ou login.
+
+---
+
+## 🛠️ Tecnologias
+
+* **Core:** HTML5 Semântico, CSS3 (Grid/Flexbox/Variables), JavaScript (ES6+).
+* **Libs:** [Chart.js](https://www.chartjs.org/) para visualização de dados.
+* **Storage:** LocalStorage API + File API (Blob).
+* **Fontes:** Google Fonts (Inter & Playfair Display).
 
 ## 📱 Screenshots
 
-*(Coloque aqui um print do seu Dashboard e outro da Tabela no celular)*
+*hmmmmmmm*
 
-## 🚀 Como Usar
+## ⚡ Como Usar
 
-1.  Baixe o arquivo `index.html` (ou clone este repositório).
-2.  Abra o arquivo em qualquer navegador moderno (Chrome, Edge, Firefox, Safari).
-3.  Comece a registrar seus estudos.
-4.  Para usar em outro dispositivo: Clique no ícone de **Download** na sidebar, envie o arquivo `.json` para o outro aparelho e use o botão de **Upload**.
-
-## 🤝 Contribuição
-
-Sugestões e pull requests são bem-vindos! Este projeto foi criado com foco na aprovação do BB, mas pode ser adaptado para qualquer ciclo de estudos.
-
----
-Desenvolvido com ☕ e código por **[Seu Nome]**.
+1. **Clone ou Baixe:**
+   ```bash
+   git clone [https://github.com/19lemabe94/agentProject.git](https://github.com/19lemabe94/agentProject.git)
